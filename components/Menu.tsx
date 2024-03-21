@@ -1,57 +1,46 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Icon from "./ui/Icon";
 
 function Menu() {
-  const anim = () => {
-    const itens = document.getElementById("scroll-anim") as HTMLDivElement;
-    itens.classList.toggle("anim");
-  };
+  const [showAlert, setShowAlert] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const divElement = document.getElementById("scroll-anim");
+      if (divElement) {
+        const divTop = divElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        const middleOfScreen = windowHeight * 0.8;
 
-  const eventHandle = () => {
-    window.addEventListener("scroll", function () {
-      var divParaAtingir = document.getElementById(
-        "scroll-anim"
-      ) as HTMLDivElement;
-      var distanciaDoTopo = divParaAtingir.getBoundingClientRect().top;
-      var alturaDaJanela = window.innerHeight;
-
-      if (distanciaDoTopo < alturaDaJanela) {
-        // Se a parte superior da div estiver visível na janela
-        // ou seja, a distância do topo for menor que a altura da janela
-        // você pode executar a ação desejada aqui
-        alert("Ola");
-        // Execute sua ação aqui, por exemplo:
-        // minhaAcao();
+        if (divTop <= middleOfScreen) {
+          if (!showAlert) {
+            setShowAlert(true);
+          }
+        } else {
+          setShowAlert(false);
+        }
       }
-    });
-  };
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <>
-      <button
-        onClick={anim}
-        className="rounded-md px-4 py-2 bg-slate-300 mx-10"
-      >
-        anim
-      </button>
-      <div
-        id="scroll-anim"
-        className="opacity-0 grid grid-cols-4 gap-y-4 gap-x-10"
-      >
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-        <div className=" h-20 w-20 bg-white"></div>
-      </div>
-    </>
+    <div
+      id="scroll-anim"
+      className={` ${
+        showAlert ? "anim" : "anim-ou"
+      } grid grid-cols-4 gap-y-10 gap-x-20`}
+    >
+      <Icon src="Project" />
+      <Icon src="Resume" />
+      <Icon src="Tuition" />
+      <Icon src="Analyze" />
+      <Icon src="Justify" />
+      <Icon src="Figma" />
+    </div>
   );
 }
 
