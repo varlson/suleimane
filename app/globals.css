@@ -6,15 +6,33 @@
     ANIMATIONS 
 */
 
+.in_view {
+  animation: entrar 0.5s;
+  margin: auto;
+}
+
+.out_view {
+  /* margin-right: -100%; */
+}
+
+@keyframes entrar {
+  from {
+    margin-right: -50%;
+  }
+
+  to {
+    margin-right: 0%; /* Defina para 0, para que a margem direita seja ajustada automaticamente */
+  }
+}
 .anim {
   animation-name: do-anim;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 .anim-ou {
   animation-name: do-anim-out;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -40,4 +58,55 @@
     opacity: 0;
     transform: scale(0.5);
   }
+}
+
+.project-image-wrap:hover .zoom {
+  opacity: 1;
+}
+
+.project-image-wrap:hover .bg {
+  opacity: 0.4;
+}
+
+/*
+
+  TEXT COSTUMIZATION
+
+*/
+
+.menu-title {
+  text-shadow: 2px 2px #9866ed;
+}
+
+/*
+  UTILS
+*/
+
+.project-card:hover div div {
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+.project-card {
+  max-width: 247px;
+}
+.center-abs-div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.proj-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.iframe {
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  height: 100%;
 }

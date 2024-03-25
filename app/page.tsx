@@ -5,6 +5,11 @@ import Experience from "@/components/Experience";
 import Side from "@/components/Side";
 import { experiences, formation } from "@/constants/constants";
 import Menu from "@/components/Menu";
+import Project from "@/components/Project";
+import Monograph from "@/components/Monograph";
+import Search from "@/components/Search";
+import Report from "@/components/Report";
+import Interests from "@/components/Interests";
 export default function Home() {
   return (
     <main className="bg-white-900 min-h-screen w-full pt-1">
@@ -62,7 +67,7 @@ export default function Home() {
 
             <div className="my-2 pt-4 border-l p-4 border-slate-400">
               <div className="">
-                <p className="mb-4 font-semibold text-xl font-nunito">
+                <p className=" mb-4 font-semibold text-xl font-nunito">
                   HISTÓRICO PROFISSIONAL
                 </p>
               </div>
@@ -78,6 +83,35 @@ export default function Home() {
         className="col-span-12 mt-10 py-4 bg-violet-600 flex justify-center items-center h-screen"
       >
         <Menu />
+      </div>
+
+      <div
+        id="projects"
+        className="w-10/12 m-auto h-screen flex mt-1 items-center justify-center "
+      >
+        <Project />
+      </div>
+
+      <div
+        id="monograph"
+        className="py-5 px-2 my-10 min-h-screen bg-violet-600 "
+      >
+        <Monograph />
+      </div>
+
+      <div id="search" className="py-5 px-2 my-10 min-h-screen bg-white-900 ">
+        <Search />
+      </div>
+
+      <div id="report" className="py-5 px-2 my-10  bg-violet-600 text-white">
+        <div className="font-bold text-center uppercase py-4 font-syne w-10/12 m-auto">
+          <p>Sobre Mim</p>
+        </div>
+        <Report />
+      </div>
+
+      <div id="interest" className="mt-10 bg-white-900">
+        <Interests />
       </div>
     </main>
   );
