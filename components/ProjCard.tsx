@@ -22,7 +22,7 @@ function ProjCard({ title, desc, embLink, img }: ProjCardProps) {
         onClick={() => {
           setIsOpen(true);
         }}
-        className="project-card text-white rounded-md flex flex-col bg-violet-600 hover:scale-105 transition-all duration-100 cursor-pointer"
+        className="project-card text-white rounded-md flex flex-col bg-violet-600 hover:scale-105 transition-all  duration-100 cursor-pointer"
       >
         <div className="relative">
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black  opacity-0 flex items-center justify-center">

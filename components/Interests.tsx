@@ -2,7 +2,7 @@ import React from "react";
 
 function Interests() {
   return (
-    <div className="w-10/12 m-auto h-screen flex flex-col justify-center">
+    <div className="px-2 md:px-0 md:w-10/12 m-auto h-screen flex flex-col justify-center">
       <p className="py-4 uppercase font-bold font-syne text-xl text-center">
         Áreas de Interesses
       </p>

@@ -3,11 +3,11 @@ import React from "react";
 
 function Side() {
   return (
-    <div className="">
+    <div className="px-2 md:p-0">
       <p className=" font-fira_code border-b border-slate-400 text-xl  font-semibold uppercase pl-5">
         Contato
       </p>
-      <ul className=" my-3 pl-5 font-jura">
+      <ul className=" my-3 md:pl-5 font-jura">
         <li className="my-2">
           <div className="flex gap-x-5">
             <Image
@@ -85,7 +85,7 @@ function Side() {
         </li>
       </ul>
 
-      <p className=" border-b border-slate-400 mt-5 text-xl font-fira_code font-semibold uppercase pl-5">
+      <p className=" border-b border-slate-400 mt-5 text-xl font-fira_code font-semibold uppercase md:pl-5">
         HABILIDADES E COMPETÊNCIAS
       </p>
       <ul className="list-disc  my-3 pl-5 font-jura">
@@ -104,10 +104,10 @@ function Side() {
         </li>
         <li className="my-2">HTML, CSS, Tailwindcss, javascript</li>
       </ul>
-      <p className=" border-b border-slate-400 mt-5 text-xl font-fira_code font-semibold uppercase pl-5">
+      <p className=" border-b border-slate-400 mt-5 text-xl font-fira_code font-semibold uppercase md:pl-5">
         CERTIFICAÇÕES
       </p>
-      <ul className=" my-3 pl-5 font-jura">
+      <ul className=" my-3 md:pl-5 font-jura">
         <li className="my-2">
           <div className="flex gap-x-2 items-center">
             <Image

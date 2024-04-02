@@ -14,7 +14,7 @@ function ClickableIcon({ src, link }: ClickableIconProps) {
         src={`/icons/${src}.png`}
         width={500}
         height={500}
-        className="h-7 w-7"
+        className="h-5 w-5 md:h-7 md:w-7"
       />
     </Link>
   );

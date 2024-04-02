@@ -28,7 +28,7 @@ function Modal({ isOpen, setIsOpen, embLink }: ModalProps) {
   return (
     <div className="z-50 fixed inset-0 flex items-center justify-around bg-slate-500">
       <div className="absolute bg-black opacity-20"></div>
-      <div className="w-10/12 h-5/6 relative bg-white">
+      <div className="w-full md:w-10/12 h-5/6 relative bg-white">
         <div className="gap-y-2 gap-x-5 mb-2 flex justify-end p-2 bg-violet-600">
           <Image
             onClick={fullScreenHandle}
