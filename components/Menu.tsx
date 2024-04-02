@@ -35,7 +35,7 @@ function Menu() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [showAlert]);
 
   return (
     <div className="flex flex-col">
@@ -46,7 +46,7 @@ function Menu() {
         id="scroll-anim"
         className={` ${
           showAlert ? "anim" : "anim-ou"
-        } grid grid-cols-4 gap-y-10 gap-x-20`}
+        } grid  grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-20`}
       >
         <div
           onClick={() => {

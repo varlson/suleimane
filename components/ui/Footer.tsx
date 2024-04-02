@@ -5,8 +5,8 @@ import ClickableIcon from "./ClickableIcon";
 function Footer() {
   return (
     <div className="bg-black min-h-52 text-white font-fira_code flex items-center">
-      <div className="gap-x-5 p-5 w-10/12 m-auto flex justify-center items-center">
-        <div className=" px-4 py-5 min-w-64 ">
+      <div className="gap-x-2 md:gap-x-5 p-5 w-full md:w-10/12 m-auto flex justify-center items-center">
+        <div className=" md:px-4 py-5 min-w-64 ">
           <p className="font-semibold  font-jura text-sm my-1">
             Projetado e desenvolvido do zero por min:
           </p>
@@ -23,7 +23,7 @@ function Footer() {
           <p className="font-bold text-center">{`SULEIMANE DUCURE`} </p>
         </div>
         <div className="border-l border-r h-24"></div>
-        <div className="flex items-center gap-x-2 justify-center min-w-64  ">
+        <div className="flex items-center gap-x-2 justify-center   ">
           <ClickableIcon link="https://github.com/varlson" src="GitHub" />
           <ClickableIcon
             link="https://www.instagram.com/varlson95/"

@@ -121,3 +121,6 @@ export const me = {
   educação não apenas enriquece minha vida pessoal, mas também me
   capacita a oferecer contribuições significativas para o bem comum. "`,
 };
+
+export const resume =
+  "Graduando em Ciência da Computação pela Universidade Federal de Ouro Preto, com previsão de conclusão do curso para agosto de 2024. Sou um entusiasta das tecnologias, dedicando-me continuamente à aprendizagem, com foco especial nas tecnologias React.js/Next.js, MongoDB, Node.js, React Native, Figma, Python, C/C++, Git/GitHub, entre outras. Tenho também forte interesse em áreas acadêmicas, como pesquisas. Meus interesses de aprendizagem não se limitam apenas às áreas mencionadas acima, mas também incluem inteligência artificial, cibersegurança e áreas afins.";
