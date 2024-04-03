@@ -26,7 +26,7 @@ function Monograph() {
   return (
     <div
       id="mono-div"
-      className={`md:w-10/12 m-auto ${apply ? `in_view` : "out_view"}`}
+      className={`md:w-10/12 m-auto ${apply ? `in_views` : "out_views"}`}
     >
       <p className="text-center font-bold font-syne uppercase text-white">
         Monografia
