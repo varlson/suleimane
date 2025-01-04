@@ -14,7 +14,7 @@ function Head() {
           width={500}
           height={500}
           className="h-28 w-28  object-contain bg-white rounded-full"
-          src="/img/me_.png"
+          src="/img/me.png"
         />
       </div>
     </div>

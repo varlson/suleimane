@@ -11,6 +11,10 @@ import Report from "@/components/Report";
 import Interests from "@/components/Interests";
 import Head from "@/components/mobile/Head";
 import MobbileMonograph from "@/components/mobile/MobbileMonograph";
+
+export const viewport = {
+  themeColor: "#5e13bf",
+};
 export default function Home() {
   return (
     <main className="bg-white-900 min-h-screen w-ful md:pt-1">
@@ -25,8 +29,8 @@ export default function Home() {
               alt=""
               width={500}
               height={500}
-              className="h-36 w-36  object-contain bg-white rounded-full"
-              src="/img/me_.png"
+              className="h-36 w-36 lg:h-[200px] lg:w-[200px] object-contain bg-white rounded-full"
+              src="/img/me.png"
             />
           </div>
         </div>

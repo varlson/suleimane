@@ -10,9 +10,7 @@ function Title(title_item: TitleType) {
   const city = place.split("-")[2].trim().toLocaleLowerCase();
 
   const [statusMsg, src] =
-    status.toLocaleLowerCase() == "concluído"
-      ? ["concluído", "ok"]
-      : ["Em progresso", "progress"];
+    status == "done" ? ["concluído", "ok"] : ["Em progresso", "progress"];
   return (
     <div className="py-5 rounded-md px-8 font-fira_code bg-white-950 my-3">
       <div className="font-semibold text-syne">

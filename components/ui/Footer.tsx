@@ -14,7 +14,7 @@ function Footer() {
             ducure95@gmail.com
           </p>
           <p className="font-thin text-sm font-nunito text-center my-1">
-            suleimane.ducure@aluno.ufop.edu.br
+            suleimane.ducure95@aluno.ufop.edu.br
           </p>
 
           <p className="font-thin text-sm font-nunito text-center my-1">

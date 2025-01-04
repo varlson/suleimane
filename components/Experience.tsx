@@ -3,9 +3,6 @@ import Profile from "./Profile";
 import Image from "next/image";
 import { ExperienceType } from "@/types/types";
 
-type ExperienceProps = {
-  status: boolean;
-};
 function Page(experience: ExperienceType) {
   const {
     title,
@@ -18,9 +15,11 @@ function Page(experience: ExperienceType) {
     institute_log,
   } = experience;
   const [statusMsg, src] =
-    status.toLocaleLowerCase() == "concluído"
+    status == "done"
       ? ["concluído", "ok"]
-      : ["Em progresso", "progress"];
+      : status == "progress"
+      ? ["Em progresso", "progress"]
+      : ["Terminado", "finish"];
   return (
     <div className="py-5 rounded-md px-8 bg-white-950 my-3">
       <div className="font-semibold  text-syne">
