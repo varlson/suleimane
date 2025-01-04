@@ -1,3 +1,4 @@
+import { Certifications } from "@/constants/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -17,7 +18,7 @@ function Side() {
               src="/icons/email.png"
               alt=""
             />
-            <p className="">ducure@gmail.com</p>
+            <p className="">ducure95@gmail.com</p>
           </div>
         </li>
 
@@ -108,18 +109,20 @@ function Side() {
         CERTIFICAÇÕES
       </p>
       <ul className=" my-3 md:pl-5 font-jura">
-        <li className="my-2">
-          <div className="flex gap-x-2 items-center">
-            <Image
-              width={200}
-              height={200}
-              className="h-6 w-6 object-cover"
-              src="/icons/Diploma.png"
-              alt=""
-            />
-            <p>AWS Practitioner Certification</p>
-          </div>
-        </li>
+        {Certifications.map((item, key) => (
+          <li key={key} className="my-2">
+            <div className="flex gap-x-2 items-center">
+              <Image
+                width={200}
+                height={200}
+                className="h-6 w-6 object-cover"
+                src={`/icons/${item.icon}.png`}
+                alt="certification icon"
+              />
+              <p>{item.title}</p>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );

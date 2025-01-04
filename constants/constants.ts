@@ -1,23 +1,34 @@
-import { ExperienceType, TitleType } from "@/types/types";
+import { CrtificationType, ExperienceType, TitleType } from "@/types/types";
 
 export const formation: TitleType[] = [
   {
-    title: "Graduação",
+    title: "Graduação em Ciência da Computação",
     date: "08/2019 <=> 08/2024",
     institute: "Universidade Federal de Ouro Preto",
     place: "Ouro Preto - MG - Brasil",
-    status: "Em progresso",
+    status: "done",
+    course: "Ciência da Computação",
   },
   {
-    title: "Ensino Médio",
-    date: "10/2011 <=> 06/2015",
+    title: "Ensino Secundário / Ensino Médio",
+    date: "10/2012 <=> 06/2015",
     institute: "Liceu Setorial de São Domingos",
     place: "São Domingos - Cacheu - Guiné-Bissau",
-    status: "Concluído",
+    status: "done",
   },
 ];
 
 export const experiences: ExperienceType[] = [
+  {
+    title: "Desenvolvedor Mobile",
+    ocupation: "Desenvolvedor - Desenvolvedor Mobile na COMPASSUOL",
+    date: "22/2024 <=> 02/2025",
+    institute: "Desenvolvedor mobile (React Native) na Compassuol.",
+    place: "Home Office",
+    status: "terminated",
+    desc: "Desenvolvedor mobile (React Native) na Compassuol.",
+    institute_log: "compass",
+  },
   {
     title: "Bolsista",
     ocupation: "Bolsista - Desenvolvedor Full Stack",
@@ -25,7 +36,7 @@ export const experiences: ExperienceType[] = [
     institute:
       "Deperamento da Engenharia Elétrica - Universidade Federal de Ouro Preto.",
     place: "Capus João Monlevade",
-    status: "Em curso",
+    status: "done",
     desc: "Continuação da reconstrução completa do site do departamento.",
     institute_log: "ufop",
   },
@@ -36,9 +47,9 @@ export const experiences: ExperienceType[] = [
     institute:
       "Deperamento da Engenharia Elétrica - Universidade Federal de Ouro Preto.",
     place: "Capus João Monlevade",
-    status: "Concluído",
+    status: "done",
     desc: "A tarefa envolve a reconstrução completa do site do departamento a partir do zero.",
-    institute_log: "ufop",
+    institute_log: "compass",
   },
   {
     institute_log: "compass",
@@ -47,7 +58,7 @@ export const experiences: ExperienceType[] = [
     date: "03/2024 <=> 08/2024",
     institute: "COMPASS UOL",
     place: "Remoto",
-    status: "Concluído",
+    status: "done",
     desc: "Realizei um estágio/trainee remoto no COMPASS UOL, onde estive envolvido com desenvolvimento mobile utilizando React Native.",
   },
 
@@ -59,7 +70,7 @@ export const experiences: ExperienceType[] = [
     institute:
       "Departamento da Computação - Universidade Federal de Ouro Preto",
     place: "Ouro Preto",
-    status: "Concluído",
+    status: "done",
     desc: "Desenvolvi atividades como aluno pesquisador no âmbito do projeto de iniciação científica, focado no tema de Redes Complexas com Múltiplas Camadas.",
   },
   {
@@ -70,7 +81,7 @@ export const experiences: ExperienceType[] = [
     institute:
       "Departamento da Computação - Universidade Federal de Ouro Preto",
     place: "Ouro Preto",
-    status: "Concluído",
+    status: "done",
     desc: "Desenvolvi o projeto de pesquisa sobre redes complexas, abordando especificamente a análise de robustez em redes de mobilidade.",
   },
 ];
@@ -124,3 +135,14 @@ export const me = {
 
 export const resume =
   "Graduando em Ciência da Computação pela Universidade Federal de Ouro Preto, com previsão de conclusão do curso para agosto de 2024. Sou um entusiasta das tecnologias, dedicando-me continuamente à aprendizagem, com foco especial nas tecnologias React.js/Next.js, MongoDB, Node.js, React Native, Figma, Python, C/C++, Git/GitHub, entre outras. Tenho também forte interesse em áreas acadêmicas, como pesquisas. Meus interesses de aprendizagem não se limitam apenas às áreas mencionadas acima, mas também incluem inteligência artificial, cibersegurança e áreas afins.";
+
+export const Certifications: CrtificationType[] = [
+  {
+    title: "AWS Cloud Practitioner Certification",
+    icon: "Diploma",
+  },
+  {
+    title: "Typescript",
+    icon: "Diploma",
+  },
+];
