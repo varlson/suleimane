@@ -2,6 +2,16 @@ import { CrtificationType, ExperienceType, TitleType } from "@/types/types";
 
 export const formation: TitleType[] = [
   {
+    title:
+      "Mestrado em Ciência da Computação (Inteligência Artificial e Ciência de Dados)",
+    date: "03/2025 <=> 03/2027",
+    institute: "Universidade Federal de Ouro Preto",
+    place: "Ouro Preto - MG - Brasil",
+    status: "progress",
+    course: "Ciência da Computação",
+  },
+
+  {
     title: "Graduação em Ciência da Computação",
     date: "08/2019 <=> 08/2024",
     institute: "Universidade Federal de Ouro Preto",
@@ -49,7 +59,7 @@ export const experiences: ExperienceType[] = [
     place: "Capus João Monlevade",
     status: "done",
     desc: "A tarefa envolve a reconstrução completa do site do departamento a partir do zero.",
-    institute_log: "compass",
+    institute_log: "ufop",
   },
   {
     institute_log: "compass",
@@ -143,6 +153,10 @@ export const Certifications: CrtificationType[] = [
   },
   {
     title: "Typescript",
+    icon: "Diploma",
+  },
+  {
+    title: "EF SET Certificate",
     icon: "Diploma",
   },
 ];
