@@ -45,7 +45,7 @@ export const experiences: ExperienceType[] = [
     date: "02/2024 <=> 12/2024",
     institute:
       "Deperamento da Engenharia Elétrica - Universidade Federal de Ouro Preto.",
-    place: "Capus João Monlevade",
+    place: "Campus João Monlevade",
     status: "done",
     desc: "Continuação da reconstrução completa do site do departamento.",
     institute_log: "ufop",
@@ -56,7 +56,7 @@ export const experiences: ExperienceType[] = [
     date: "02/2023 <=> 02/2024",
     institute:
       "Deperamento da Engenharia Elétrica - Universidade Federal de Ouro Preto.",
-    place: "Capus João Monlevade",
+    place: "Campus João Monlevade",
     status: "done",
     desc: "A tarefa envolve a reconstrução completa do site do departamento a partir do zero.",
     institute_log: "ufop",
